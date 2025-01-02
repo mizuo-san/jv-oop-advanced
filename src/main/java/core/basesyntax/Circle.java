@@ -6,7 +6,7 @@ public class Circle extends Figure implements FigureMethods {
     private final float radius;
 
     public Circle(Colors color, float radius) {
-        super(color, "Circle");
+        super(color, "circle");
         this.radius = radius;
     }
 
