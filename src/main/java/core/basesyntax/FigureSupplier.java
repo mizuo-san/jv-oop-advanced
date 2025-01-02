@@ -2,7 +2,7 @@ package core.basesyntax;
 
 import java.util.Random;
 
-public class FigureSupplier implements FigureMethods {
+public class FigureSupplier {
     public Figure getRandomFigure() {
         return switch(new Random().nextInt(5)) {
             case 0 -> new Rectangle(Colors.values()[new Random().nextInt(4)], 10, 10);
@@ -15,16 +15,6 @@ public class FigureSupplier implements FigureMethods {
     }
 
     public Figure getDefaultFigure() {
-
-    }
-
-    @Override
-    public double area() {
-        return 0;
-    }
-
-    @Override
-    public void draw() {
 
     }
 }
